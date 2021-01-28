@@ -197,7 +197,8 @@ class Nagios::Base
   end
 
   # Handle parameters like attributes.
-  def method_missing(mname, *args) # rubocop:disable Style/MethodMissing
+  def method_missing(mname, *args)
+    # rubocop:disable Style/MethodMissing
     pname = mname.to_s
     pname.sub!(%r{=}, '')
 
@@ -319,7 +320,7 @@ class Nagios::Base
                   :check_freshness, :freshness_threshold, :event_handler,
                   :event_handler_enabled, :low_flap_threshold, :high_flap_threshold,
                   :flap_detection_enabled, :flap_detection_options,
-                  :failure_prediction_enabled, :process_perf_data,
+                  :process_perf_data,
                   :retain_status_information, :retain_nonstatus_information, :contacts,
                   :contact_groups, :notification_interval, :first_notification_delay,
                   :notification_period, :notification_options, :notifications_enabled,
@@ -345,12 +346,13 @@ class Nagios::Base
     setparameters :host_name, :hostgroup_name, :service_description,
                   :display_name, :servicegroups, :is_volatile, :check_command,
                   :initial_state, :max_check_attempts, :check_interval, :retry_interval,
-                  :normal_check_interval, :retry_check_interval, :active_checks_enabled,
+                  :active_checks_enabled,
                   :passive_checks_enabled, :parallelize_check, :check_period,
                   :obsess_over_service, :check_freshness, :freshness_threshold,
                   :event_handler, :event_handler_enabled, :low_flap_threshold,
                   :high_flap_threshold, :flap_detection_enabled, :flap_detection_options,
-                  :process_perf_data, :failure_prediction_enabled, :retain_status_information,
+                  :process_perf_data,
+                  :retain_status_information,
                   :retain_nonstatus_information, :notification_interval,
                   :first_notification_delay, :notification_period, :notification_options,
                   :notifications_enabled, :contacts, :contact_groups, :stalking_options,

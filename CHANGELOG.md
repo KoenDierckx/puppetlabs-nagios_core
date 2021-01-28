@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.0.4] - 2020-01-28
+## Removed
+- Removed deprecated property failure_prediction_enabled
+- Removed deprecated property normal_check_interval
+- Removed deprecated property retry_check_interval
+
 ## [1.0.3] - 2018-01-11
 ## Added
 - Added LICENSE file

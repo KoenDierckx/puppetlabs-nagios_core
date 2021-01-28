@@ -472,12 +472,6 @@ Nagios configuration file parameter.
 
 Nagios configuration file parameter.
 
-##### `failure_prediction_enabled`
-
-(*Property:* This attribute represents concrete state on the target system.)
-
-Nagios configuration file parameter.
-
 ##### `first_notification_delay`
 
 (*Property:* This attribute represents concrete state on the target system.)
@@ -1224,12 +1218,6 @@ Nagios configuration file parameter.
 
 Nagios configuration file parameter.
 
-##### `failure_prediction_enabled`
-
-(*Property:* This attribute represents concrete state on the target system.)
-
-Nagios configuration file parameter.
-
 ##### `first_notification_delay`
 
 (*Property:* This attribute represents concrete state on the target system.)
@@ -1319,12 +1307,6 @@ Nagios configuration file parameter.
 The desired mode of the config file for this `nagios_service` resource.
 
 NOTE: If the target file is explicitly managed by a file resource in your manifest, this parameter has no effect. If a parent directory of the target is managed by a recursive file resource, this limitation does not apply (i.e., this parameter takes precedence, and if purge is used, the target file is exempt).
-
-##### `normal_check_interval`
-
-(*Property:* This attribute represents concrete state on the target system.)
-
-Nagios configuration file parameter.
 
 ##### `notes`
 
@@ -1419,12 +1401,6 @@ Nagios configuration file parameter.
 Nagios configuration file parameter.
 
 ##### `retain_status_information`
-
-(*Property:* This attribute represents concrete state on the target system.)
-
-Nagios configuration file parameter.
-
-##### `retry_check_interval`
 
 (*Property:* This attribute represents concrete state on the target system.)
 
